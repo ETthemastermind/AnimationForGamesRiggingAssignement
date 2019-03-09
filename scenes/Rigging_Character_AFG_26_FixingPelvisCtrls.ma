@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Rigging_Character_AFG_26_FixingPelvisCtrls.ma
-//Last modified: Sat, Mar 09, 2019 02:45:25 PM
+//Last modified: Sat, Mar 09, 2019 02:54:01 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -17,14 +17,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4CD6531E-4BB1-80B6-041C-4B84892DCA3C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.0539752006069749 1.428477035306547 4.2568954875343703 ;
-	setAttr ".r" -type "double3" 10799.05392639353 -1753.4000000012729 7.232872976910457e-17 ;
+	setAttr ".t" -type "double3" 0.24456582648356701 3.5717952503721251 4.6870321459615791 ;
+	setAttr ".r" -type "double3" 10775.053926367997 -1796.2000000004298 -1.9922266493717748e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DFEA2E9-4EB8-1A2D-7C58-0BA2B83B23DD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
 	setAttr ".fcp" 1000;
-	setAttr ".coi" 5.7225029220471519;
+	setAttr ".coi" 4.3741167682615547;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -417,7 +417,7 @@ createNode orientConstraint -n "Wrist_Joint_L_orientConstraint1" -p "Wrist_Joint
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -8.4522017389583901e-16 -19.822548482306615 22.731943529325065 ;
+	setAttr ".lr" -type "double3" -9.2350217186340495e-16 -30.570548482306613 22.731943529325061 ;
 	setAttr ".o" -type "double3" -7.9298031261192392 18.226074099105475 -24.005924726970285 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814635168e-15 -5.9635400277440939e-16 
 		-5.9635400277440939e-16 ;
@@ -509,7 +509,7 @@ createNode parentConstraint -n "LittleFinger1_parentConstraint1" -p "|Pelvis|Spi
 	setAttr ".tg[0].tot" -type "double3" -4.4408920985006262e-16 0 -4.163336342344337e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.1805546814635168e-15 
 		-1.5902773407317584e-14 ;
-	setAttr ".lr" -type "double3" 8.1637118361765734e-15 2.3515357924974461e-13 2.0403203581183216 ;
+	setAttr ".lr" -type "double3" 1.4463646436678787e-14 2.3166152100386953e-13 2.0403203581183376 ;
 	setAttr ".rst" -type "double3" 0.16446994438490012 0.012213560114437749 -0.0011600714156002057 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611551e-15 3.279947015259251e-15 1.5405811738338909e-14 ;
 	setAttr -k on ".w0";
@@ -600,7 +600,7 @@ createNode parentConstraint -n "RingFinger1_parentConstraint1" -p "|Pelvis|Spine
 		-4.8572257327350599e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.1805546814635168e-15 
 		-1.5902773407317584e-14 ;
-	setAttr ".lr" -type "double3" 0 2.3496347709311726e-13 0 ;
+	setAttr ".lr" -type "double3" 6.3611093629270706e-15 2.3158413774406233e-13 1.8486974086006706e-14 ;
 	setAttr ".rst" -type "double3" 0.17957652421780204 0.018542677612142233 0.03859733247111119 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611551e-15 3.279947015259251e-15 1.5405811738338909e-14 ;
 	setAttr -k on ".w0";
@@ -692,7 +692,7 @@ createNode parentConstraint -n "MiddleFinger1_parentConstraint1" -p "|Pelvis|Spi
 		-4.163336342344337e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.1805546814635168e-15 
 		-1.5902773407317584e-14 ;
-	setAttr ".lr" -type "double3" 0 2.3496347709311726e-13 0 ;
+	setAttr ".lr" -type "double3" 6.3611093629270706e-15 2.3158413774406233e-13 1.8486974086006706e-14 ;
 	setAttr ".rst" -type "double3" 0.16703300714486821 0.013287391884516664 0.076325972100003803 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611551e-15 3.279947015259251e-15 1.5405811738338909e-14 ;
 	setAttr -k on ".w0";
@@ -784,7 +784,7 @@ createNode parentConstraint -n "IndexFinger1_parentConstraint1" -p "|Pelvis|Spin
 		-3.1225022567582528e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.1805546814635168e-15 
 		-1.5902773407317584e-14 ;
-	setAttr ".lr" -type "double3" 0 2.3496347709311726e-13 0 ;
+	setAttr ".lr" -type "double3" 6.3611093629270706e-15 2.3158413774406233e-13 1.8486974086006706e-14 ;
 	setAttr ".rst" -type "double3" 0.15501081957311183 0.008250524601336684 0.11248654650735707 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611551e-15 3.279947015259251e-15 1.5405811738338909e-14 ;
 	setAttr -k on ".w0";
@@ -875,7 +875,7 @@ createNode parentConstraint -n "Thumb1_parentConstraint1" -p "|Pelvis|Spine1|Spi
 		-2.7755575615628914e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -5.5659706925611543e-15 -3.1805546814635168e-15 
 		-1.5902773407317584e-14 ;
-	setAttr ".lr" -type "double3" 0 2.3496347709311726e-13 0 ;
+	setAttr ".lr" -type "double3" 6.3611093629270706e-15 2.3158413774406233e-13 1.8486974086006706e-14 ;
 	setAttr ".rst" -type "double3" 0.04254158132951269 -0.038870069973669485 0.076280176617070317 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611551e-15 3.279947015259251e-15 1.5405811738338909e-14 ;
 	setAttr -k on ".w0";
@@ -1684,7 +1684,7 @@ createNode transform -n "Character_body" -p "Character_group";
 createNode mesh -n "Character_bodyShape" -p "Character_body";
 	rename -uid "1697030B-4CC7-AB1B-8AC3-EB9A9FE99360";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
+	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.53125 0.37239086627960205 ;
@@ -14837,7 +14837,7 @@ createNode transform -n "Teeth" -p "Character_body";
 createNode mesh -n "TeethShape" -p "Teeth";
 	rename -uid "8EB9C34C-4D24-1600-F0DD-13A1466A9EA4";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
+	setAttr -s 6 ".iog[0].og";
 	setAttr ".pv" -type "double2" 0.25475499033927917 0.98233997821807861 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 3959 ".uvst[0].uvsp";
@@ -36137,7 +36137,7 @@ createNode transform -n "eye_int_left" -p "Left";
 createNode mesh -n "eye_int_leftShape" -p "eye_int_left";
 	rename -uid "5FA03D2E-421E-136D-DA27-89830AAFE020";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
+	setAttr -s 8 ".iog[0].og";
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 1 "f[0:391]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:391]";
 	setAttr ".vir" yes;
@@ -37759,7 +37759,7 @@ createNode transform -n "eye_ext_left" -p "Left";
 createNode mesh -n "eye_ext_leftShape" -p "eye_ext_left";
 	rename -uid "EEED6161-4F66-4B6C-0F8A-9B9A31BED16D";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
+	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -39258,7 +39258,7 @@ createNode transform -n "eye_int_right" -p "right";
 createNode mesh -n "eye_int_rightShape" -p "eye_int_right";
 	rename -uid "FC784221-4678-7EE3-741F-F893613CD304";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
+	setAttr -s 7 ".iog[0].og";
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 1 "f[0:391]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -40558,7 +40558,7 @@ createNode transform -n "eye_ext_right" -p "right";
 createNode mesh -n "eye_ext_rightShape" -p "eye_ext_right";
 	rename -uid "7C077430-4B6C-6EF3-F176-57ADA75D8FAE";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
+	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -42020,7 +42020,6 @@ createNode transform -n "Wrist_Ctrl_L" -p "Elbow_Ctrl_L";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 9;
 	setAttr ".t" -type "double3" 0.0084760413963780278 -0.0028004588448158341 -0.0013376455682683266 ;
-	setAttr ".r" -type "double3" 0 10.748000000000005 0 ;
 	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999989 0.99999999999999967 ;
 	setAttr ".rp" -type "double3" 0.99973124265670754 1.7604699134826653 -0.032293546944856644 ;
 	setAttr ".rpt" -type "double3" -0.023560792356122608 0 -0.18587309275552677 ;
@@ -46333,18 +46332,6 @@ createNode makeNurbCircle -n "makeNurbCircle4";
 	rename -uid "E302EAFA-484C-27AE-6F33-C6B35146460C";
 	setAttr ".nr" -type "double3" 1 0 0 ;
 	setAttr ".r" 0.014;
-createNode groupId -n "cabeca:olho2text1:groupId8";
-	rename -uid "D86E6F69-4972-538E-EAB9-94B4CD894CF8";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId4";
-	rename -uid "39A150BD-4468-30F6-8AE5-3391FEB56D1B";
-	setAttr ".ihi" 0;
-createNode groupId -n "cabeca:groupId2";
-	rename -uid "2364C999-49D0-3500-623C-86AE64C26683";
-	setAttr ".ihi" 0;
-createNode groupId -n "cabeca:groupId1";
-	rename -uid "1A81B626-4EA5-85BB-9B2C-718AD5377D1F";
-	setAttr ".ihi" 0;
 createNode makeNurbCircle -n "makeNurbCircle5";
 	rename -uid "D89EBEE4-4C2A-4413-89A3-D8AE2313E283";
 	setAttr ".nr" -type "double3" 1 0 0 ;
@@ -46477,6 +46464,18 @@ createNode makeNurbCircle -n "makeNurbCircle31";
 	rename -uid "93D62A3A-4651-D869-A11A-3A91D972DAF7";
 	setAttr ".nr" -type "double3" 1 0 0 ;
 	setAttr ".r" 0.014;
+createNode groupId -n "cabeca:olho2text1:groupId8";
+	rename -uid "D86E6F69-4972-538E-EAB9-94B4CD894CF8";
+	setAttr ".ihi" 0;
+createNode groupId -n "groupId4";
+	rename -uid "39A150BD-4468-30F6-8AE5-3391FEB56D1B";
+	setAttr ".ihi" 0;
+createNode groupId -n "cabeca:groupId2";
+	rename -uid "2364C999-49D0-3500-623C-86AE64C26683";
+	setAttr ".ihi" 0;
+createNode groupId -n "cabeca:groupId1";
+	rename -uid "1A81B626-4EA5-85BB-9B2C-718AD5377D1F";
+	setAttr ".ihi" 0;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";

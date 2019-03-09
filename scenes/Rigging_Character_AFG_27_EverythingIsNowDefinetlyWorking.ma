@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Rigging_Character_AFG_27_EverythingIsNowDefinetlyWorking.ma
-//Last modified: Sat, Mar 09, 2019 02:51:30 PM
+//Last modified: Sat, Mar 09, 2019 02:52:45 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -17,14 +17,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4CD6531E-4BB1-80B6-041C-4B84892DCA3C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.98329379770938197 2.1688133990678913 2.1583997756879563 ;
-	setAttr ".r" -type "double3" 10787.053926499277 -1781.7999999953699 0 ;
+	setAttr ".t" -type "double3" 1.9724952564517297 4.6129832341053332 2.3320498097566009 ;
+	setAttr ".r" -type "double3" 10754.053926494085 -1763.7999999952337 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DFEA2E9-4EB8-1A2D-7C58-0BA2B83B23DD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
 	setAttr ".fcp" 1000;
-	setAttr ".coi" 2.3100097565976423;
+	setAttr ".coi" 4.1209813988663857;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
