@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: Rigging_Character_AFG_29_WeirdRotsSorted.ma
-//Last modified: Sat, Mar 09, 2019 08:55:10 PM
+//Name: Rigging_Character_AFG_30_PreWeightPainting.ma
+//Last modified: Sat, Mar 09, 2019 08:57:07 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -17,14 +17,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4CD6531E-4BB1-80B6-041C-4B84892DCA3C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.017852835481633411 2.7684872306282764 1.6197596926200526 ;
-	setAttr ".r" -type "double3" 10770.853926419366 -1797.0000000012787 1.8910459548754146e-15 ;
+	setAttr ".t" -type "double3" 0.50143766198927819 2.7835192166515643 2.1077106480048013 ;
+	setAttr ".r" -type "double3" 10776.253926402915 -1785.8000000007764 -8.2019958159494005e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DFEA2E9-4EB8-1A2D-7C58-0BA2B83B23DD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
 	setAttr ".fcp" 1000;
-	setAttr ".coi" 2.2619930849055896;
+	setAttr ".coi" 2.7731629399636404;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -49379,4 +49379,4 @@ connectAttr "Teeth5.msg" ":defaultTextureList1.tx" -na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
 connectAttr "ikSCsolver.msg" ":ikSystem.sol" -na;
 connectAttr "ikSplineSolver.msg" ":ikSystem.sol" -na;
-// End of Rigging_Character_AFG_29_WeirdRotsSorted.ma
+// End of Rigging_Character_AFG_30_PreWeightPainting.ma
