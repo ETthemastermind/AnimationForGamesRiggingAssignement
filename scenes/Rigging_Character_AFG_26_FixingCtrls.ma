@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: Rigging_Character_AFG_26_EverythingSeemsToFollow_RemakingSpine.ma
-//Last modified: Sat, Mar 09, 2019 02:31:11 PM
+//Name: Rigging_Character_AFG_26_FixingCtrls.ma
+//Last modified: Sat, Mar 09, 2019 02:31:25 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -49283,4 +49283,4 @@ connectAttr "Teeth5.msg" ":defaultTextureList1.tx" -na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
 connectAttr "ikSCsolver.msg" ":ikSystem.sol" -na;
 connectAttr "ikSplineSolver.msg" ":ikSystem.sol" -na;
-// End of Rigging_Character_AFG_26_EverythingSeemsToFollow_RemakingSpine.ma
+// End of Rigging_Character_AFG_26_FixingCtrls.ma
